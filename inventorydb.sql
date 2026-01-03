@@ -11,7 +11,7 @@ DROP TABLE IF EXISTS admin;
 DROP TABLE IF EXISTS users;
 
 -- ============================================
--- CREATE TABLES (with all updates)
+-- CREATE TABLES
 -- ============================================
 
 -- USERS
@@ -94,7 +94,7 @@ FOREIGN KEY (item_id) REFERENCES items(id)
 ON DELETE CASCADE;
 
 -- ============================================
--- INSERT STATEMENTS (updated with new attributes)
+-- INSERT STATEMENTS
 -- ============================================
 
 -- Admins
@@ -263,20 +263,20 @@ JOIN categories c ON i.category_id = c.id;
 SHOW TABLES;
 
 -- Show attributes of each table
-DESCRIBE users;
-DESCRIBE admin;
-DESCRIBE orders;
-DESCRIBE items;
-DESCRIBE categories;
-DESCRIBE items_order;
-DESCRIBE order_receipts;
+-- DESCRIBE users;
+-- DESCRIBE admin;
+-- DESCRIBE orders;
+-- DESCRIBE items;
+-- DESCRIBE categories;
+-- DESCRIBE items_order;
+-- DESCRIBE order_receipts;
 
-select * from categories;
+-- select * from categories;
 
-select * from orders;
+-- select * from orders;
 
-select * from items;
+-- select * from items;
 
-select * from items_order;
+-- select * from items_order;
 
-select * from order_receipts;
+-- select * from order_receipts;
